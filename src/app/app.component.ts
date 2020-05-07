@@ -6,7 +6,7 @@ import { Component, VERSION,  ElementRef, ViewChild } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  title = 'Angular ' + VERSION.major + 'Master Class';
+  title = 'Angular ' + VERSION.major + ' Master Class';
   number1: any;
   number2: any;
   answer: any;
