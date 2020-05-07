@@ -360,13 +360,15 @@
           <button (click)="calculate()" [style.width.px]="width" [style.height.px]="height">=</button>
       <input #box3 class="dinbox" type="text" [(ngModel)]="answer" placeholder="z" enabled="false">
     </div>
-    <div class="card-container">
+ </div>
+   <div class="card-container">
+     <div class="sum-card">
          <div class="circle-link" (click)="changeOperand('+')">+</div>
          <div class="circle-link" (click)="changeOperand('-')">-</div>
          <div class="circle-link" (click)="changeOperand('/')">/</div>
          <div class="circle-link" (click)="changeOperand('*')">x</div>
-    </div>
- </div>
+     </div>
+  </div>
 
 
     <a class="card" target="_blank" rel="noopener" href="https://codementor.io/theresamostert">
@@ -391,7 +393,7 @@
       </a>
 
       <div class="sum-card">
-          <p>Theresa Mostert</p>
+         
           <p>Github: @isogramc</p>
       </div>
   </footer>
