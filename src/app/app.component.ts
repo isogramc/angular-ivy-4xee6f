@@ -21,13 +21,13 @@ export class AppComponent  {
 
   calculate(){
     if (this.operand === '+'){
-      this.answer = parseInt('10', this.number1) + parseInt('10', this.number2);
+      this.answer = parseFloat(this.number1) + parseFloat(this.number2);
     } else if (this.operand === '-') {
-      this.answer = parseInt('10', this.number1) - parseInt('10', this.number2);
+      this.answer = parseFloat(this.number1) - parseFloat(this.number2);
     } else if (this.operand === '/') {
-      this.answer = parseInt('10', this.number1) / parseInt('10', this.number2);
+      this.answer = parseFloat(this.number1) / parseFloat(this.number2);
     } else if (this.operand === '*') {
-      this.answer = parseInt('10', this.number1) * parseInt('10', this.number2);
+      this.answer = parseFloat(this.number1) * parseFloat(this.number2);
     }
   }
 
