@@ -354,11 +354,11 @@
 
  <div class="card-container">
     <div class="sum-card">
-      <input #box1 class="dinbox" (keypress)="clear1()" [(ngModel)]="number1" placeholder="x" required>
+      <input #box1 name="box1" type="number" pattern="[0-9]*" class="dinbox" (keypress)="clear1()" [(ngModel)]="number1" placeholder="x" required>
         <div class="dinbox">  {{operand}} </div>
-      <input #box2 class="dinbox" (keypress)="clear2()" [(ngModel)]="number2" placeholder="y"required>
+      <input #box2 type="number" pattern="[0-9]*" class="dinbox" (keypress)="clear2()" [(ngModel)]="number2" placeholder="y" required>
           <button (click)="calculate()" [style.width.px]="width" [style.height.px]="height">=</button>
-      <input #box3 class="dinbox" type="text" [(ngModel)]="answer" placeholder="z" disabled>
+      <input #box3 type="number" class="dinbox" [(ngModel)]="answer" placeholder="z" disabled>
     </div>
  </div>
    <div class="card-container">
