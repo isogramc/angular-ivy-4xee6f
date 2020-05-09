@@ -19,9 +19,12 @@ export class AppComponent implements OnInit {
   @ViewChild('box1', { static: false }) public box1: ElementRef;
 
 ngOnInit(){
-  setTimeout(() => this.box1.nativeElement.focus(), );
+  this.resetFocus();
 }
  
+ resetFocus(){
+   setTimeout(() => this.box1.nativeElement.focus(), 5);
+ }
 
   calculate(){
     if (this.operand === '+'){
@@ -52,6 +55,7 @@ ngOnInit(){
   changeOperand(exper){
     this.clear3();
     this.operand = exper;
+    this.resetFocus;
   }
 }
 
