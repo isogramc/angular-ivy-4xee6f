@@ -358,7 +358,7 @@
         <div class="dinbox">  {{operand}} </div>
       <input #box2 class="dinbox" (keypress)="clear2()" [(ngModel)]="number2" placeholder="y"required>
           <button (click)="calculate()" [style.width.px]="width" [style.height.px]="height">=</button>
-      <input #box3 class="dinbox" type="text" [(ngModel)]="answer" placeholder="z" enabled="false">
+      <input #box3 class="dinbox" type="text" [(ngModel)]="answer" placeholder="z" disabled>
     </div>
  </div>
    <div class="card-container">
